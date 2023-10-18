@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Mulish:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy:regular" rel="stylesheet" />
     <link rel="stylesheet" href="./styles/style.css">
     <title>Booking</title>
 </head>
@@ -13,7 +14,8 @@
         <header class="header">
             <div class="header__container">
                 <a class="header__help" href="tel: +1234561500">
-                    <span>Questions? Need Help?</span>&nbsp;&nbsp;&nbsp;Call us on (+123) 456 1500
+                    <span>Questions? Need Help?</span>
+                    <div>Call us on (+123) 456 1500</div>
                 </a>
                 <div class="header__gifts">
                     <a class="card" href="#" alt="BTP Gift Card">
@@ -28,15 +30,41 @@
             </div>
             <div class="header__main">
                 <div class="header__left">
-                    <div class="header__logo"></div>
-                    <div class="header__search"></div>
+                    <a class="header__logo" href="#">Best <span>tour</span> plan</a>
+                    <div class="header__search">
+                        <input type="text" class="search__input" placeholder="Search Location">
+                        <button class="search__btn"></button>
+                    </div>
                 </div>
                 <div class="header__rigth">
-                    <div class="header__basket"></div>
-                    <div class="header__account"></div>
+                    <div class="header__basket">
+                        <div class="basket__iterator">2</div>
+                        <div class="basket__icon"></div>
+                    </div>
+                    <div class="header__account">
+                        <div class="header__avatar"></div>
+                        <div class="header__name">Nathan</div>
+                        <div class="header__arrow"></div>
+                    </div>
                 </div>
             </div>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"> <a href="" class="header__link">All Deals</a></li>
+                    <li class="header__item"><a href="" class="header__link">Hotels</a></li>
+                    <li class="header__item"> <a href="" class="header__link">Activities</a></li>
+                    <li class="header__item"><a href="" class="header__link">Hotel Day Packages</a></li>
+                    <li class="header__item"> <a href="" class="header__link">Restaurants</a></li>
+                    <li class="header__item"><a href="" class="header__link">Events</a></li>
+                    <li class="header__item"><a href="" class="header__link">Rodrigues</a></li>
+                </ul>
+            </nav>
         </header>
+        <main class="main">
+            <div class="main__address-tag">
+                <a href="" class="address-tag__link">Home</a> / <a href="" class="address-tag__link">Flash Offers</a> / <a href="" class="address-tag__link">Grand Hilton Hotel</a>
+            </div>
+        </main>
     </div>
 </body>
 </html>

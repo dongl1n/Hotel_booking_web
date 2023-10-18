@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: #F5FAFE;
+}
+
 .header__container {
   display: flex;
   flex-direction: row;
@@ -104,4 +108,200 @@ a {
     align-items: center;
     width: 115px;
   }
+}
+.header__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  padding: 24px 168px 23px 165px;
+  gap: 10px;
+}
+.header__left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+  gap: 10px;
+}
+.header__rigth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 237px;
+  gap: 10px;
+}
+.header__logo {
+  max-width: 177px;
+  font-family: "Luckiest guy";
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.header__logo > span {
+  font-family: "Luckiest guy";
+  color: #EC1F46;
+}
+.header__search {
+  display: flex;
+  flex-direction: row;
+  width: 450px;
+}
+.header__basket {
+  display: flex;
+  align-items: flex-end;
+  width: 34px;
+  height: 34px;
+  position: relative;
+  cursor: pointer;
+}
+.header__account {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  cursor: pointer;
+}
+.header__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #ff224b;
+}
+.header__arrow {
+  width: 24px;
+  height: 24px;
+  background-image: url(../assets/svg/chevron-down.svg);
+}
+
+.search__input {
+  padding: 12px 238px 13px 23px;
+  font-size: 12px;
+  line-height: 15.06px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border: none;
+  background-color: #F5FAFE;
+  outline: none;
+}
+.search__btn {
+  padding: 12px 24px;
+  background-color: #EC1F46;
+  background-image: url(../assets/svg/search.svg);
+  background-size: 16px 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  cursor: pointer;
+}
+.search__btn:hover {
+  background-color: #c61636;
+  transition: 0.2s linear;
+}
+.search__btn:active {
+  background-color: #ff224b;
+}
+
+.basket__iterator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 14px;
+  width: 20px;
+  height: 20px;
+  background-color: #EC1F46;
+  border-radius: 100%;
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+}
+.basket__icon {
+  width: 24px;
+  height: 24px;
+  background: url(../assets/svg/shopping-cart.svg);
+  background-size: 24px 24px;
+  background-position: center center;
+}
+
+@media screen and (max-width: 1025px) {
+  .header__main {
+    flex-direction: column;
+  }
+  .header__left {
+    width: auto;
+    align-self: center;
+  }
+  .header__rigth {
+    width: auto;
+    margin-top: 15px;
+    align-self: center;
+    margin-left: 230px;
+  }
+  .header__search {
+    width: auto;
+  }
+  .header__logo {
+    max-width: none;
+    font-size: 22px;
+  }
+  .search__input {
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .header__main {
+    padding-right: 18px;
+    padding-left: 15px;
+  }
+}
+.header__nav {
+  padding: 31px 168px 31px 165px;
+  background-color: #0A223D;
+}
+.header__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: white;
+  list-style: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+.header__item:hover {
+  transform: scale(1.2);
+  transition: 0.2s linear;
+}
+
+@media screen and (max-width: 769px) {
+  .header__nav {
+    padding-right: 18px;
+    padding-left: 15px;
+  }
+  .header__list {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 20px;
+  }
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 168px 19px 165px;
+}
+
+.address-tag__link:hover {
+  font-weight: 700;
+  transition: 0.2s linear;
 }/*# sourceMappingURL=style.css.map */
