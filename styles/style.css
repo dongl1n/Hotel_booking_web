@@ -300,8 +300,64 @@ body {
   flex-direction: column;
   padding: 18px 168px 19px 165px;
 }
+.main__address-tag {
+  margin-bottom: 19px;
+}
+.main__grand {
+  padding: 23px 0px 4px 0px;
+}
 
 .address-tag__link:hover {
   font-weight: 700;
   transition: 0.2s linear;
+}
+
+.grand__card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.grand__rate {
+  display: flex;
+  flex-direction: row;
+}
+.grand__star {
+  width: 8px;
+  height: 8px;
+  background-image: url(../assets/svg/rate.svg);
+  background-size: 8px 8px;
+  margin-right: 2px;
+}
+.grand__name {
+  display: flex;
+  flex-direction: column;
+}
+.grand__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 370px;
+}
+.grand__header {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30.12px;
+}
+.grand__text {
+  font-size: 12px;
+}
+.grand__offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 20px;
+  background-color: #EC1F46;
+  color: white;
+  padding: 3px 9px 3px 9px;
+  border-radius: 3px;
+  font-size: 10px;
+  line-height: 12.55px;
 }/*# sourceMappingURL=style.css.map */

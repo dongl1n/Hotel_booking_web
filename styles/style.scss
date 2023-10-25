@@ -348,6 +348,14 @@ body{
     display: flex;
     flex-direction: column;
     padding: 18px 168px 19px 165px;
+
+    &__address-tag{
+        margin-bottom: 19px;
+    }
+
+    &__grand{
+        padding: 23px 0px 4px 0px;
+    }
 }
 
 .address-tag{
@@ -358,3 +366,59 @@ body{
     }
 }
 
+.grand{
+    &__card{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    &__rate{
+        display: flex;
+        flex-direction: row;
+    }
+    &__star{
+        width: 8px;
+        height: 8px;
+        background-image: url(../assets/svg/rate.svg);
+        background-size: 8px 8px;
+        margin-right: 2px;
+    }
+    &__name{
+        display: flex;
+        flex-direction: column;
+    }
+    &__link{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 370px;
+    }
+
+    &__header{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30.12px;
+    }
+
+    &__text{
+        font-size: 12px;
+    }
+
+    &__offer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 20px;
+        background-color: $logo;
+        color: white;
+        padding: 3px 9px 3px 9px;
+        border-radius: 3px;
+        font-size: 10px;
+        line-height: 12.55px;
+    }
+
+    
+}
